@@ -28,11 +28,6 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
                 $img_upload_path="user_img/".$new_img_name;
                 move_uploaded_file($tmp_name, $img_upload_path);
 
-                // $type_id = mysqli_real_escape_string($conn, $_POST['type_id']);
-                // $vehicle_name = mysqli_real_escape_string($conn, $_POST['vehicle_name']);
-                // $seat = mysqli_real_escape_string($conn, $_POST['seat']);
-				// $license_plate = mysqli_real_escape_string($conn, $_POST['license_plate']);
-
 				$errors = array();
 
 				$id = $_POST['id'];
@@ -46,19 +41,8 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 				$userlevel = $_POST['userlevel'];
 				$position = $_POST['position'];
 
-				// $vehicle_id = $_POST['vehicle_id'];
-				// $new_img_name = $_POST['image'];
-				// $vehicle_name = $_POST['vehicle_name'];
-				// $seat = $_POST['seat'];
-				// $license_plate = $_POST['license_plate'];
-
-				// $sql = "UPDATE vehicle SET type_id='$type_id', vehicle_name='$vehicle_name', seat='$seat', license_plate='$license_plate', 
-				// 		vehicle_photo='$new_img_name' WHERE vehicle_id = '" . $vehicle_id . "'";
-				$sql = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', email='$email', 
-						position='$position', tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
-                // Insert into Database
-                // $sql = "INSERT INTO vehicle (vehicle_id ,type_id ,vehicle_name ,seat ,license_plate ,vehicle_photo) 
-                //         VALUES(NULL, '$type_id', '$vehicle_name', '$seat','$license_plate','$new_img_name')";
+				$sql = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', position='$position'
+						email='$email', password='password' ,tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
 
                 mysqli_query($conn, $sql);
 
@@ -99,8 +83,12 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 
 				// $sql2 = "UPDATE vehicle SET type_id='$type_id', vehicle_name='$vehicle_name', seat='$seat', license_plate='$license_plate', 
 				// 		vehicle_photo='$new_img_name' WHERE vehicle_id = '" . $vehicle_id . "'";
-				$sql2 = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', email='$email', 
-						position='$position', tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
+				// $sql2 = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', email='$email', 
+				// 		position='$position', tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
+
+				$sql2 = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', position='$position'
+				email='$email', password='password' ,tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
+
 				mysqli_query($conn, $sql2);
 
                 echo "<script>alert('แก้ไขข้อมูลแล้ว'); window.location = './list_user.php';</script>"; 

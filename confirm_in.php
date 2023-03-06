@@ -81,7 +81,7 @@ if( empty($file)){
     <?php
     include('ul.php');
     ?>
-    <!-- EndNavbar -->
+    <!-- EndNavbar  -->
 
     <div class="container">
         <main>
