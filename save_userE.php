@@ -42,7 +42,7 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 				$position = $_POST['position'];
 
 				$sql = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', position='$position'
-						email='$email', password='password' ,tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
+						email='$email', password='$password' ,tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
 
                 mysqli_query($conn, $sql);
 
@@ -87,7 +87,7 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 				// 		position='$position', tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
 
 				$sql2 = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', position='$position'
-				email='$email', password='password' ,tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
+				email='$email', password='$password' ,tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
 
 				mysqli_query($conn, $sql2);
 
