@@ -41,7 +41,7 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 				$userlevel = $_POST['userlevel'];
 				$position = $_POST['position'];
 
-				$sql = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', position='$position'
+				$sql = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', position='$position',
 						email='$email', password='$password' ,tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
 
                 mysqli_query($conn, $sql);
@@ -86,7 +86,7 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 				// $sql2 = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', email='$email', 
 				// 		position='$position', tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
 
-				$sql2 = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', position='$position'
+				$sql2 = "UPDATE user SET userlevel='$userlevel', pre='$pre',fname='$fname', lname='$lname', sex='$sex', position='$position',
 				email='$email', password='$password' ,tel='$tel' , photo='$new_img_name' WHERE user_id = '" . $id . "'";
 
 				mysqli_query($conn, $sql2);
