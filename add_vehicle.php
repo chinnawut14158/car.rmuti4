@@ -45,7 +45,7 @@ session_start();
                                     <?php
                                         $res = mysqli_query($conn, "SELECT * FROM type");
                                     ?>
-                                        <div class="col-md-12">
+                                    <div class="col-md-12">
                                         <label for="country" class="form-label">ประเภทรถ</label>
                                         <select class="form-select" id="type_id" name="type_id">
                                         <option value="0">เลือกประเภทรถ</option>
@@ -57,24 +57,20 @@ session_start();
                                     ?>
                                         </select>
                                     </div>
-                                    <div class="row g-3">
-                                        <div class="col-sm-12">
+                                    <div class="col-sm-12">
                                             <label for="" class="form-label">หมายเลขทะเบียนรถ</label>
                                             <input type="text" class="form-control" id="license_plate"
                                                 placeholder="กรอกหมายเลขทะเบียนรถ" value="" required="" name="license_plate">
-                                        </div>
-                                        <div class="row g-3">
-                                            <div class="col-sm-12">
+                                    </div>
+                                    <div class="col-sm-12">
                                                 <label for="" class="form-label">จำนวนที่นั่ง</label>
                                                 <input type="text" class="form-control" id="seat"
                                                     placeholder="กรอกจำนวนที่นั่ง" value="" required="" name="seat">
-                                            </div>
-                                            <div class="row g-3">
-                                                <div class="col-sm-12">
+                                    </div>
+                                    <div class="col-sm-12">
                                                     <label for="" class="form-label">รูปภาพยานพานะ</label>
                                                     <input type="file" class="form-control" name="my_image" id="my_image" placeholder="ใส่ช่องอัปโหลดรูปภาพ" value="" required="">
-                                                </div>
-                                            </div>
+                                    </div>
                                             <hr class="my-4">
                                             <button class="w-100 btn btn-primary btn-lg" type="submit" name="submit" id="savecar">บันทึก</button>
                                         </div>

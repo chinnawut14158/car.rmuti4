@@ -40,7 +40,8 @@ include('connect.php');
     </center>
     <div class="row g-5">
       <div class="col-md-7 col-lg-12" style="padding:0px 0px 0px 0px;">
-        <center><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23EF6C00&ctz=Asia%2FBangkok&showTz=0&showCalendars=0&showTabs=1&showPrint=1&showDate=1&showNav=1&showTitle=0&src=Y19hYzc4bWZjM3U4ZjNmM25zNDN1bmJrMWxoa0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D50000" style="border: 0" width="1300" height="600" frameborder="0" scrolling="no"></iframe></center>
+      <center><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23EF6C00&ctz=Asia%2FBangkok&showTz=0&showTitle=0&src=Y2Fycm11dGlAZ21haWwuY29t&color=%23039BE5" style="border-width:0" width="1300" height="600" frameborder="0" scrolling="no"></iframe></center>
+        <!-- <center><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23EF6C00&ctz=Asia%2FBangkok&showTz=0&showCalendars=0&showTabs=1&showPrint=1&showDate=1&showNav=1&showTitle=0&src=Y19hYzc4bWZjM3U4ZjNmM25zNDN1bmJrMWxoa0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D50000" style="border: 0" width="1300" height="600" frameborder="0" scrolling="no"></iframe></center> -->
       </div>
     </div>
   </div>

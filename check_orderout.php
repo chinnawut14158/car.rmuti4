@@ -98,13 +98,15 @@ $level = $_SESSION['userlevel'];
                                 </div>
                             </div>
 
-                            <div class="col-sm-12">
+                            <div class="col-sm-6">
                                 <label for="" class="form-label">จำนวน</label>
                                 <input type="text" class="form-control" id="passenger" name="passenger"
                                     placeholder="กรอกจำนวน (คน)" value="<?php echo $row['passenger']; ?>" required="">
-                                <div class="invalid-feedback">
-                                    Valid is required.
-                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="" class="form-label">เบอร์โทรสำหรับติดต่อ</label>
+                                <input type="text" class="form-control" id="tel" name="tel"
+                                    placeholder="กรอกจำนวน (คน)" value="<?php echo $row['tel']; ?>" required="">
                             </div>
                             <div class="col-sm-6">
                                 <label for="" class="form-label">อาจารย์ - เจ้าหน้าที่</label>
@@ -127,7 +129,7 @@ $level = $_SESSION['userlevel'];
                             <div class="col-6">
                                 <label for="username" class="form-label">วันที่เดินทางไป</label>
                                 <div class="input-group has-validation">
-                                    <span class="input-group-text">วันที่</span>
+                                    <span class="input-group-text">วันที่ไป</span>
                                     <input type="date" class="form-control" id="date_from" name="date_from" placeholder="Username"
                                         required="" value="<?php echo $row['date_from']; ?>">
                                     <div class="invalid-feedback">

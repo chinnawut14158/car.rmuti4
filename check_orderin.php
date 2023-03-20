@@ -69,22 +69,26 @@ if ($level != '1') {
                                     <label for="" class="form-label">จำนวนผู้เดินทาง</label>
                                     <input type="text" class="form-control" id="passenger" name="passenger" placeholder="กรอกจำนวนผู้เดินทาง" value="<?php echo $row['passenger']; ?>" required="">
                                 </div>
-                                <div class="col-sm-12">
+                                <div class="col-sm-6">
                                     <label for="" class="form-label">เพื่อปฎิบัติหน้าที่</label>
                                     <input type="text" class="form-control" id="request_for" name="request_for" placeholder="กรอกวัตถุประสงค์ในการเดินทาง" value="<?php echo $row['request_for']; ?>" required="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="" class="form-label">เบอร์โทรสำหรับติดต่อ</label>
+                                    <input type="text" class="form-control" id="tel" name="tel" placeholder="กรอกวัตถุประสงค์ในการเดินทาง" value="<?php echo $row['tel']; ?>" required="">
                                 </div>
                                 <!-- วันที่เดินทางไป -->
                                 <div class="col-6">
                                     <label for="username" class="form-label">วันที่</label>
                                     <div class="input-group has-validation">
-                                        <span class="input-group-text">วันที่</span>
+                                        <span class="input-group-text">วันที่ไป</span>
                                         <input type="date" class="form-control" id="date_from" name="date_from" placeholder="" required="" value="<?php echo $row['date_from']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <label for="username" class="form-label">วันที่</label>
                                     <div class="input-group has-validation">
-                                        <span class="input-group-text">วันที่</span>
+                                        <span class="input-group-text">วันที่กลับ</span>
                                         <input type="date" class="form-control" id="date_to" name="date_to" placeholder="" required="" value="<?php echo $row['date_to']; ?>">
                                     </div>
                                 </div>

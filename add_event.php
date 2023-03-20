@@ -24,7 +24,7 @@ $license_name = $_SESSION['license_name'];
     <p>Add new Event</p>
       
 <?php
-define('APPLICATION_NAME', 'carrmuti4');
+define('APPLICATION_NAME', 'carrmuti');
 define('CREDENTIALS_PATH', __DIR__ . '/.credentials/calendar.json');
 define('CLIENT_SECRET_PATH', __DIR__ . '/client_secret.json');
 // If modifying these scopes, delete your previously saved credentials
@@ -132,7 +132,7 @@ $event_data = array(
   );
   $event = new Google_Service_Calendar_Event($event_data); // สร้าง event object
    
-  $calendarId = 'c_ac78mfc3u8f3f3ns43unbk1lhk@group.calendar.google.com'; // calendar หลัก
+  $calendarId = 'carrmuti@gmail.com'; // calendar หลัก
   $event = $service->events->insert($calendarId, $event); // ทำคำสั่งเพิ่มข้อมูล
   printf('Event created: %s', $event->htmlLink); // หากเพิ่มข้อมูลสำเร็จ จะได้ค่า ลิ้งค์
 
